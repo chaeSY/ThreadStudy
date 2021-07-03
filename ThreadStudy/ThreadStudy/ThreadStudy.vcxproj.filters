@@ -6,7 +6,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="01stdThread.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="02atomic.cpp">
       <Filter>Main</Filter>
     </ClCompile>
   </ItemGroup>
