@@ -33,17 +33,3 @@ void main()
 	if (t2.joinable())
 		t2.join();
 }
-
-
-
-// 간단 해결법. 
-// 1. Lock의 순서를 통일한다.
-// mutex에 id를 부여하여 id가 큰 순서부터 lock한다거나.. 하는 방법
-
-// std::lock(m1, m2, ...)
-// 인자로 받은 mutex를 내부적으로 순서를 유지하며 lock을 걸어줌
-// unlock은 직접 해줘도 되지만 lock_guard에 adopt_lock 옵션을 넣어주면 lock_guard에서 뮤텍스를 획득할 때 lock을 걸지 않고, 나중에 소멸할 때 unlock을 해준다.
-// std::lock(m1, m2);
-// lock_guard<mutex> g1(m1, std::adopt_lock);
-// lock_guard<mutex> g2(m2, std::adopt_lock);
-// adopt_lock: 이미 lock된 상태니까 나중에 소멸될 때 풀어주기만 하거라.
