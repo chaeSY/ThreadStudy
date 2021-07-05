@@ -1,8 +1,5 @@
-#include <iostream>
-#include <thread>
-#include <atomic>
+#include "include.h"
 
-using namespace std;
 
 int sum = 0; // 공유메모리
 

@@ -1,6 +1,5 @@
-﻿#include <iostream>
-#include <vector>
-#include <thread> 
+﻿#include "include.h"
+
 // C++11에서 thread가 표준으로 들어옴
 //::CreateThread 와 같은 Window api의 thread를 사용한다면, 혹여나 나중에 리눅스로 서버를 옮겨야 하는 상황이 생길 때 문제가 됨.
 

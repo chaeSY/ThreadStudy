@@ -1,8 +1,4 @@
-#include <iostream>
-#include <thread>
-#include <atomic>
-
-using namespace std;
+#include "include.h"
 
 atomic<int> sum = 0;
 

@@ -1,22 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="02.atomic">
-      <UniqueIdentifier>{ba30e343-693f-479c-9edd-bfe669f218f8}</UniqueIdentifier>
-    </Filter>
     <Filter Include="01. std::Thread">
       <UniqueIdentifier>{6aaa54ce-22b0-4286-9efb-144f2c716fbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. atomic">
+      <UniqueIdentifier>{ba30e343-693f-479c-9edd-bfe669f218f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. lock">
+      <UniqueIdentifier>{f48f94cb-ae48-4aa1-b65f-0ad438d55e44}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="no_atomic.cpp">
-      <Filter>02.atomic</Filter>
+      <Filter>02. atomic</Filter>
     </ClCompile>
     <ClCompile Include="atomic.cpp">
-      <Filter>02.atomic</Filter>
+      <Filter>02. atomic</Filter>
     </ClCompile>
     <ClCompile Include="thread.cpp">
       <Filter>01. std::Thread</Filter>
     </ClCompile>
+    <ClCompile Include="no_lock.cpp">
+      <Filter>03. lock</Filter>
+    </ClCompile>
+    <ClCompile Include="lock.cpp">
+      <Filter>03. lock</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include.h" />
   </ItemGroup>
 </Project>
