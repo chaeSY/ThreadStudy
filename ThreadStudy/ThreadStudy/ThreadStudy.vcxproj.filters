@@ -10,6 +10,9 @@
     <Filter Include="03. lock">
       <UniqueIdentifier>{f48f94cb-ae48-4aa1-b65f-0ad438d55e44}</UniqueIdentifier>
     </Filter>
+    <Filter Include="04. deadlock">
+      <UniqueIdentifier>{0a129b46-af50-4c68-852e-4245ece6f7f0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="no_atomic.cpp">
@@ -27,8 +30,23 @@
     <ClCompile Include="lock.cpp">
       <Filter>03. lock</Filter>
     </ClCompile>
+    <ClCompile Include="deadlock.cpp">
+      <Filter>04. deadlock</Filter>
+    </ClCompile>
+    <ClCompile Include="UserManager.cpp">
+      <Filter>04. deadlock</Filter>
+    </ClCompile>
+    <ClCompile Include="AccountManager.cpp">
+      <Filter>04. deadlock</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include.h" />
+    <ClInclude Include="UserManager.h">
+      <Filter>04. deadlock</Filter>
+    </ClInclude>
+    <ClInclude Include="AccountManager.h">
+      <Filter>04. deadlock</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
