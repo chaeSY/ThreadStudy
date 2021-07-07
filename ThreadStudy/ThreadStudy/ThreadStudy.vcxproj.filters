@@ -13,6 +13,9 @@
     <Filter Include="04. deadlock">
       <UniqueIdentifier>{0a129b46-af50-4c68-852e-4245ece6f7f0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="05. Spinlock">
+      <UniqueIdentifier>{ae7deba1-2ed4-4e85-b9bb-6f57b19d73f6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="no_atomic.cpp">
@@ -38,6 +41,12 @@
     </ClCompile>
     <ClCompile Include="AccountManager.cpp">
       <Filter>04. deadlock</Filter>
+    </ClCompile>
+    <ClCompile Include="spinlock.cpp">
+      <Filter>05. Spinlock</Filter>
+    </ClCompile>
+    <ClCompile Include="Sleep.cpp">
+      <Filter>05. Spinlock</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
