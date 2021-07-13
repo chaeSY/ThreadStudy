@@ -4,5 +4,6 @@
 #include <atomic>
 #include <vector>
 #include <mutex>
+#include <queue>
 
 using namespace std;
